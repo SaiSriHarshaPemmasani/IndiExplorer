@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         //handler to change screen to signup page in 3 seconds
         Handler(Looper.getMainLooper()).postDelayed({
                     startActivity(Intent(this,SignUpActivity::class.java))
+                    finish()
                 },3000)
 
     }

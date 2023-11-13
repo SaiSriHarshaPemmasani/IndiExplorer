@@ -44,4 +44,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //added dependencies
+    // dependency for circular images
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    implementation("com.android.support:multidex:1.0.3")
 }
