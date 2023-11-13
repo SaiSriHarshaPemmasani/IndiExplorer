@@ -90,18 +90,20 @@
         android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/User_Email">
+        app:layout_constraintTop_toBottomOf="@+id/User_Email"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Button -->
 
     <Button
-        android:id="@+id/elevatedButton"
+        android:id="@+id/Sign_up_btn"
         style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,6 +118,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/User_password" />
 
+
+
+
+    <!--login page link-->
+
     <TextView
         android:id="@+id/login_link"
         android:layout_width="match_parent"
@@ -126,13 +133,7 @@
         android:text="Already have an account? Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elevatedButton" />
-
-
-    <!--login page link-->
-
-
-    <!-- Login Page link -->
+        app:layout_constraintTop_toBottomOf="@+id/Sign_up_btn" />
 
 
 
